@@ -1,0 +1,49 @@
+<?php
+    ?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CRUD Operations Using PHP, MySQL and Require.js</title>
+
+        <!-- Bootstrap CSS File  -->
+        <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap.css"/>
+    </head>
+    <body>
+
+        <!-- Content Section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 product" style="padding-top: 2%;">
+
+                    <form name="product-form" class="product-form form-inline" action="javascript:void(0);">
+                        <div class="form-group">
+                            <label for="email">Choose File:</label>
+                            <input type="file" class="form-control" id="upload-file" name="product-name">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="save-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row product-list" style="display: none1;">
+                <div class="col-md-12">
+                    <h3>File Details:</h3>
+
+                    <div id="product-list-dv" class="records_content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Content Section -->
+
+
+        <script type="text/javascript">
+            var baseUrl = "<?php echo $base_url; ?>";
+            var require = {
+                urlArgs : "bust="+new Date().getTime()
+            };
+        </script>
+        <script data-main="scripts/app" src="scripts/require.js"></script>
+    </body>
+</html>

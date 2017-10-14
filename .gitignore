@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+vendor
+composer.lock
+app/Tnq/Todo/Configuration/settings.php

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package-details>
+	<timestamp>2014-02-12 T17:58:23.000</timestamp>
+	<proof-correctors>
+		<proof-corrector task="Author Corrections" actor="Author" role="Proof Corrector" name="Maheshwari M" email="maheshwari.m@tnqsoftware.co.in"/>
+	</proof-correctors>
+	<metadata>
+		<supplier>TNQ</supplier>
+		<package-id>JASN201605716</package-id>
+		<article-info>
+			<journal-id>JASN</journal-id>
+			<article-id>201605716</article-id>
+			<article-type>research-article</article-type>
+			<article-title>Clot Structure: A Potent Mortality Risk Factor in Patients on Hemodialysis</article-title>
+			<corresponding-authors>
+				<contrib><name>Maheshwari M</name><email>maheshwari.m@tnqsoftware.co.in</email></contrib>
+				<contrib><name>Jeevitha S</name><email>jeevitha.s@tnqsoftware.co.in</email></contrib>
+			</corresponding-authors>
+		</article-info>
+	</metadata>
+	<file-info>
+		<file type="XML" category="main">
+			<path>201605716/JASN201605716.xml</path>
+		</file>
+		<file type="PDF" category="main">
+			<path>201605716/JASN201605716.pdf</path>
+		</file>		
+		<file type="IMAGE" category="assets">
+			<path>201605716/images/pnas.1605716113fig01.eps</path>
+		</file>
+		<file type="IMAGE" category="assets">
+			<path>201605716/images/pnas.1605716113fig02.eps</path>
+		</file>
+		<file type="IMAGE" category="assets">
+			<path>201605716/images/pnas.1605716113fig03.eps</path>
+		</file>
+		<file type="IMAGE" category="assets">
+			<path>201605716/images/pnas.1605716113fig04.eps</path>
+		</file>
+		<file type="IMAGE" category="assets">
+			<path>201605716/images/pnas.1605716113fig05.eps</path>
+		</file>
+		</file-info>
+</package-details>
