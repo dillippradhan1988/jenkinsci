@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh root@172.17.0.3 <<EOF
+ssh -t -t root@172.17.0.3 <<EOF
 	cd /var/www/localhost/htdocs/jenkinsci
 	git pull
 EOF
