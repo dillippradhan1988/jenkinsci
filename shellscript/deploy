@@ -1,6 +1,7 @@
 #!/bin/sh
 
-ssh -t -t root@172.17.0.3 <<EOF
+#ssh -t -t root@172.17.0.3 <<EOF
+	httpd -k start
 	cd /var/www/localhost/htdocs/jenkinsci
 	git pull origin master
-EOF
+#EOF
