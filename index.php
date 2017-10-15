@@ -1,4 +1,2 @@
 <?php
-	phpinfo();
-	echo 44;
-	echo 66;
+	echo "<h1>Hello World</h1>";
