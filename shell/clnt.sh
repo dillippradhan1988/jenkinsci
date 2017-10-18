@@ -6,7 +6,7 @@ ssh -t -t root@172.17.0.2 <<EOF
     find . -name \*.php -exec php -l {} \; | grep -v 'No syntax errors' > phpError.txt
     noOfLine=$(wc -l < phpError.txt)                                             
    
-    echo $noOfLine
+    echo "$noOfLine"
     if [ $? -eq 1 && $noOfLine -gt 0]
     then
         echo "Unable to build."
