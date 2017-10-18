@@ -1,7 +1,0 @@
-No syntax errors detected in ./app/web/index.php
-No syntax errors detected in ./app/Tnq/Todo/Service/ProductService.php
-No syntax errors detected in ./app/Tnq/Todo/Util/dependencies.php
-No syntax errors detected in ./app/Tnq/Todo/Model/ProductModel.php
-No syntax errors detected in ./app/Tnq/Todo/Model/ResourceAbstract.php
-Errors parsing ./index.php
-No syntax errors detected in ./cli-config.php
