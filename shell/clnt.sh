@@ -4,7 +4,7 @@ ssh -t -t root@172.17.0.2 <<EOF
     #git pull origin master    
     timeStamp=$(date +%s)
     randomHash=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
-    uniqueId=$timeStamp$randomHash
+    uniqueId="$timeStamp$randomHash"
     fileExt=".txt"
     uniqueFileName=$uniqueId$fileExt
 
