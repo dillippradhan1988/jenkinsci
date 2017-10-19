@@ -3,7 +3,7 @@
  #its subdirectories. This takes into consideration only those files
  #or directories which do not have spaces or newlines in their names 
 
-rm log/phperror.txt
+rm /log/phperror.txt
 DIR="app/Tnq/Todo"
 list_files(){
 	errorCnt=0
@@ -24,7 +24,7 @@ list_files(){
 				cd ..
  			else
  				#echo $i; #Display File name
- 				php -l $i | grep -v "No syntax errors" >> log/phperror.txt
+ 				php -l $i | grep -v "No syntax errors" >> /log/phperror.txt
  				#echo $?				
 			fi
  		done
@@ -33,7 +33,7 @@ list_files(){
 if [ $# -eq 0 ]
 then 
 	list_files .
-	nofoline=$(wc -l < log/phperror.txt)
+	nofoline=$(wc -l < /log/phperror.txt)
 	echo $nofoline
 	if [ $nofoline -ne 0 ]
 	then
