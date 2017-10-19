@@ -3,7 +3,7 @@
  #its subdirectories. This takes into consideration only those files
  #or directories which do not have spaces or newlines in their names 
 
-rm /log/phperror.txt
+#rm /log/phperror.txt
 DIR="app/Tnq/Todo"
 list_files(){
 	errorCnt=0
