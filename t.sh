@@ -3,8 +3,8 @@
  #its subdirectories. This takes into consideration only those files
  #or directories which do not have spaces or newlines in their names 
 
-rm /home/dillip/jenkinsci_client/jenkinsci/app/Tnq/Todo/log.txt
-DIR="/home/dillip/jenkinsci_client/jenkinsci/app/Tnq/Todo"
+rm log/phperror.txt
+DIR="app/Tnq/Todo"
 list_files(){
 	errorCnt=0
 	if !(test -d $1) 
@@ -24,7 +24,7 @@ list_files(){
 				cd ..
  			else
  				#echo $i; #Display File name
- 				php -l $i | grep -v "No syntax errors" >> /home/dillip/jenkinsci_client/jenkinsci/app/Tnq/Todo/log.txt
+ 				php -l $i | grep -v "No syntax errors" >> log/phperror.txt
  				#echo $?				
 			fi
  		done
@@ -33,7 +33,7 @@ list_files(){
 if [ $# -eq 0 ]
 then 
 	list_files .
-	nofoline=$(wc -l < /home/dillip/jenkinsci_client/jenkinsci/app/Tnq/Todo/log.txt)
+	nofoline=$(wc -l < log/phperror.txt)
 	echo $nofoline
 	if [ $nofoline -ne 0 ]
 	then
