@@ -1,0 +1,12 @@
+# Codeception Test Suite Configuration
+#
+# Suite for unit or integration tests.
+
+actor: UnitTester
+modules:
+    enabled: [Doctrine2]
+    config:
+      Doctrine2:
+            connection_callback: ['Acme\Model\MyCn', 'getEntityManager']
+            cleanup: true
+    #- \Helper\Unit
